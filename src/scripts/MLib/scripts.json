@@ -1,8 +1,12 @@
 [
-  {
+    {
     "name": "MLib_example_script",
     "eventHandlerList": [
-      "sysInstall"
+        "sysInstall"
     ]
-  }
+},
+
+    {
+    "name": "LICENSE"
+}
 ]
