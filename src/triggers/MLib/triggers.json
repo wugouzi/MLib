@@ -1,5 +1,40 @@
 [
   {
+    "name": "Mapper",
+    "isFolder": "yes",
+    "children": [
+      {
+        "name": "prompt_1",
+        "pattern": "HP: (d+)/[(d+)] SP: (d+)/[(d+)] EP: (d+)/[(d+)] EXP: (d+) >",
+        "type": "regex"
+      },
+      {
+        "name": "prompt_2",
+        "patterns": [
+          {
+            "pattern": "Hp: (d+)((d+)) Sp: (d+)((d+)) Ep: (d+)((d+))",
+            "type": "regex"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Combat",
+    "isFolder": "yes",
+    "children": [
+      {
+        "name": "combat_done",
+        "patterns": [
+          {
+            "pattern": "You are done with the skill.",
+            "type": "substring"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Rats",
     "isFolder": "yes",
     "children": [
@@ -49,7 +84,7 @@
     "highlight": "yes",
     "highlightFG": "#00aa7f",
     "highlightBG": "#aa00ff",
-    "patterns":[
+    "patterns": [
       {
         "pattern": "Regained Equilibrium",
         "type": "substring"

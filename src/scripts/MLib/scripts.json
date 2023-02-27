@@ -1,12 +1,35 @@
 [
-    {
+  {
+    "name": "UI",
+    "isFolder": "yes",
+    "children": [
+      {
+        "name": "chat"
+      },
+      {
+        "name": "prompt"
+      }
+    ]
+  },
+  {
+    "name": "Mapper",
+    "isFolder": "yes",
+    "children": [
+      {
+        "name": "mapper_script"
+      },
+      {
+        "name": "mapper_window"
+      }
+    ]
+  },
+  {
     "name": "MLib_example_script",
     "eventHandlerList": [
-        "sysInstall"
+      "sysInstall"
     ]
-},
-
-    {
+  },
+  {
     "name": "LICENSE"
-}
+  }
 ]
